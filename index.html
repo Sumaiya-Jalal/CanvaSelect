@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Color Picker</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+   <div class="left-panel">
+  <div class="image-preview">
+    <canvas id="imageCanvas"></canvas>
+  </div>
+
+  <!-- Instruction added here -->
+  <p class="instruction">Select colors from the image</p>
+
+  <input type="file" id="imageUpload" accept="image/*"/>
+  <button id="downloadBtn">Download Palette</button>
+</div>
+
+    <div class="right-panel">
+      <h2>Color Palette</h2>
+      <div id="paletteContainer"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

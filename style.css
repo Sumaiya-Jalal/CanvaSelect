@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0b1d3a; /* dark blue */
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-preview {
+  width: 300px;
+  height: 300px;
+  border: 2px dashed #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#imageCanvas {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+input[type="file"],
+button {
+  background-color: #1e90ff;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #187bcd;
+}
+
+.right-panel {
+  flex: 1;
+}
+
+#paletteContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.color-box {
+  width: 140px;
+  height: 110px;
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-shadow: 1px 1px 2px #000;
+  position: relative;
+}
+
+
+.color-box .color-name {
+  margin-bottom: 6px;
+}
+
+.color-box .hex {
+  font-size: 14px;
+}
+.instruction {
+  color: #ffffff;
+  font-size: 14px;
+  margin: -10px 0 10px 0;
+  font-style: italic;
+}
